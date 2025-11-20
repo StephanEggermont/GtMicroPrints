@@ -1,3 +1,9 @@
+# MicroPrints in GToolkit
+
+MicroPrints provide a pixel-based representation of text files or source code enriched with semantical information. 
+They can help understanding of software systems [Robbes, Ducasse & Lanza](https:/scg.unibe.ch/archive/papers/Robb05b-microprintsESUG.pdf)
+
+![alt](https://github.com/StephanEggermont/GtMicroPrints/docs/MicroPrint.png)
 
 ## Installation
 
