@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-20T10:59:18.755725+01:00"
+						"dateAndTimeString" : "2025-11-20T11:16:02.033576+01:00"
 					}
 				},
 				"uid" : {
@@ -110,7 +110,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "If the repo is small enough, I can ask for a visualization of all files with a specific extension"
+				"string" : "If the repo is small enough, I can ask for a visualization of all files relative to the root with a specific extension"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -145,6 +145,219 @@
 					"uidString" : "+GQVv30sSTKW/9bzHh+VFw=="
 				},
 				"code" : "visualizer allFilesIn: '.' ofType: 'ts'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:16:11.495924+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:16:22.200118+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RdEYGf1eTSqFK0j0AK+OOA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Or in a subdirectory"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:16:27.003354+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:16:38.816105+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "in+MecWwT/KmpJjo8GeKow=="
+				},
+				"code" : "visualizer allFilesIn: 'src' ofType: 'ts'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:16:53.226652+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:17:57.991893+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oHa7W2szTCeApcN+b2AHaQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When dealing with code in the image, I can set the classes"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:18:01.22283+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:18:11.379345+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uN9kGeMZRM6GrS4AMSvQ+Q=="
+				},
+				"code" : "visualizer classes: (PP2CompositeNode withAllSubclasses).\rvisualizer mondrianViewOnClasses"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:18:20.768442+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:20:04.357816+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "x5tcYsH6T82QB+ny1eEOAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Some classes consist mostly of generated code. SmaCC parsers have a definitionString on the class side that gives a better insight. Some of them are way longer than the default 1000 lines that is the max height by default (and the 120 max width)"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:20:11.768936+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-20T11:20:23.895049+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UkVc7ZXtQFC9JQKu3rRP5Q=="
+				},
+				"code" : "visualizer maxHeight: 3000.\rvisualizer classes: (SmaCCParser withAllSubclasses).\rvisualizer mondrianViewOnSmaCCParsers"
 			}
 		]
 	},
