@@ -6,6 +6,7 @@ They can help understanding of software systems [Robbes, Ducasse & Lanza](https:
 <img width="824" height="824" alt="MicroPrint" src="https://github.com/user-attachments/assets/caaf5b79-f515-45af-a168-94d2c26a98e6" />
 
 ## Installation
+Open a Page with a Pharo snippet in GToolkit and inspect the following code:
 
 ```st
 Metacello new
