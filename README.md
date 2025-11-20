@@ -21,3 +21,5 @@ After installing with Metacello, you will be able to execute
 ```
 #BaselineOfGtMicroPrints asClass loadLepiter
 ```
+
+and then find the main documentation page in 'Knowledge bases'
