@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-20T10:55:37.42628+01:00"
+						"dateAndTimeString" : "2025-11-26T13:41:16.155587+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "LItBIceUQ+m3ZDeYU6iraQ=="
 				},
-				"code" : "repositoryLocation := '/home/stephan/Sensus/draw/cardboard/'.\rvisualizer := MPMicroPrinter root:repositoryLocation."
+				"code" : "repositoryLocation := '/home/stephan/Sensus/draw/cardboard'.\rvisualizer := MPMicroPrinter root:repositoryLocation."
 			},
 			{
 				"__type" : "textSnippet",
@@ -279,14 +279,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-20T11:48:22.652979+01:00"
+						"dateAndTimeString" : "2025-11-24T12:39:50.514873+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "VGfwVDlYTQyhAEUnXLx4nQ=="
 				},
-				"code" : "visualizer allFilesIn: 'src/' ofType: 'ts' that:\r\t[:coll | coll select: [:each | \n\t#('main2' 'view-state' 'CardCreator' 'InputCoordinator') detect: [:fileName | \n\t\t(RxMatcher forString: fileName ) search: each basename] \n\t\tifFound: [true] \n\t\tifNone:[false]]]"
+				"code" : "visualizer allFilesIn: 'src/' ofType: 'ts' that:\r\t[:coll | coll select: [:each | \n\t\t#('refactoringGame' 'viewState' 'cardCreator' 'inputCoordinator') detect: [:fileName | \n\t\t\t(RxMatcher forString: fileName ) search: each basename] \n\t\t\t\tifFound: [true] \n\t\t\t\tifNone:[false]]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -429,6 +429,77 @@
 					"uidString" : "UkVc7ZXtQFC9JQKu3rRP5Q=="
 				},
 				"code" : "visualizer maxHeight: 3000.\rvisualizer classes: (SmaCCParser withAllSubclasses).\rvisualizer mondrianViewOnSmaCCParsers"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-26T13:40:41.979479+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-26T13:40:49.435592+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AX40oClIQcqEQXP4MJcqPQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Working with multiple repos"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-26T13:40:54.277161+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-26T13:45:23.209544+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "F4v/KbIFQoqeo7+RA1W5ug=="
+				},
+				"code" : "visualizer directories: {'/home/stephan/Sensus/draw/cardboard/src' asFileReference. '/home/stephan/Sensus/draw/pairdraw/src' asFileReference}.\rvisualizer mondrianMultiDirView"
 			}
 		]
 	},

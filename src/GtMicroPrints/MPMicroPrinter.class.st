@@ -8,7 +8,8 @@ Class {
 		'directory',
 		'extension',
 		'selectBlock',
-		'classes'
+		'classes',
+		'directories'
 	],
 	#category : 'GtMicroPrints-Model',
 	#package : 'GtMicroPrints',
@@ -83,6 +84,16 @@ MPMicroPrinter >> defaultSelectBlock [
 	^ [ :aCollection | aCollection ]
 ]
 
+{ #category : 'accessing' }
+MPMicroPrinter >> directories [
+	^ directories
+]
+
+{ #category : 'accessing' }
+MPMicroPrinter >> directories: anObject [
+	directories := anObject
+]
+
 { #category : 'as yet unclassified' }
 MPMicroPrinter >> findEncodingFor: aFileReference [
 	^[aFileReference binaryReadStreamDo: [ :in | 
@@ -106,6 +117,30 @@ MPMicroPrinter >> maxHeight [
 { #category : 'accessing' }
 MPMicroPrinter >> maxHeight: anObject [
 	maxHeight := anObject
+]
+
+{ #category : 'as yet unclassified' }
+MPMicroPrinter >> mondrianMultiDirView [
+	|view |
+	view := GtMondrian new.
+	view nodes
+		shape: [:aDirectory | GtMondrianUMLClassElement withDefaultContainer
+		label: (aDirectory pathString)];
+		with: directories;
+		forEach: [:dir |
+			view nodes
+				shape: [:aFile | GtMondrianUMLClassElement withDefaultContainer
+				label: (aFile basename)];
+			with: (selectBlock value: ((dir ) allFiles select: [:each | each extension = extension])) ;
+			forEach: [:file |
+				view nodes
+					shape: [:fi | |enc|
+						enc := self findEncodingFor: file.
+						(self createForm: (file readStreamEncoded: enc do: [:stream | stream contents])) asElement];
+					with: {file}].
+			view layout rectanglePack].
+			view layout rectanglePack.
+		^view
 ]
 
 { #category : 'as yet unclassified' }
