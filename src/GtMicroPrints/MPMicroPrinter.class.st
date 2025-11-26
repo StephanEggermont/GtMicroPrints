@@ -51,7 +51,9 @@ MPMicroPrinter >> classes: anObject [
 MPMicroPrinter >> createForm: source [
 	|sourceForm height width|
 	height := source lines size.
-	width := source lines max: [:line | line size].
+	height = 0 ifTrue: [width := 0]
+	ifFalse: [
+		width := source lines max: [:line | line size]].
 	height > maxHeight ifTrue: [height := maxHeight].
 	width > maxWidth ifTrue: [width := maxWidth].
 	sourceForm := Form extent: (width+1)@(height+1) depth: 32.
