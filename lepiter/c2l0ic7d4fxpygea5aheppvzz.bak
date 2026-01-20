@@ -492,14 +492,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-26T13:45:23.209544+01:00"
+						"dateAndTimeString" : "2025-11-26T13:45:54.511568+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "F4v/KbIFQoqeo7+RA1W5ug=="
 				},
-				"code" : "visualizer directories: {'/home/stephan/Sensus/draw/cardboard/src' asFileReference. '/home/stephan/Sensus/draw/pairdraw/src' asFileReference}.\rvisualizer mondrianMultiDirView"
+				"code" : "visualizer directories: {'/home/stephan/Sensus/draw/cardboard/src' asFileReference. '/home/stephan/Sensus/draw/pairdraw/assets' asFileReference}.\rvisualizer mondrianMultiDirView"
 			}
 		]
 	},
