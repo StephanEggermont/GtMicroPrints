@@ -6,7 +6,7 @@ Class {
 		'maxWidth',
 		'root',
 		'directory',
-		'extension',
+		'extensions',
 		'selectBlock',
 		'classes',
 		'directories'
@@ -25,7 +25,7 @@ MPMicroPrinter class >> root: aString [
 
 { #category : 'as yet unclassified' }
 MPMicroPrinter >> allFilesIn: aRelativePathString ofType: anExtension [
-	^self allFilesIn: aRelativePathString ofType: anExtension that:self defaultSelectBlock.
+	^self allFilesIn: aRelativePathString ofTypes: {anExtension} that:self defaultSelectBlock.
 
 ]
 
@@ -33,6 +33,20 @@ MPMicroPrinter >> allFilesIn: aRelativePathString ofType: anExtension [
 MPMicroPrinter >> allFilesIn: aRelativePathString ofType: anExtension that: aBlock [
 	directory := root / aRelativePathString.
 	extension := anExtension.
+	selectBlock := aBlock.
+	^self mondrianView 
+]
+
+{ #category : 'as yet unclassified' }
+MPMicroPrinter >> allFilesIn: aRelativePathString ofTypes: anExtensionArray [
+	^self allFilesIn: aRelativePathString ofTypes: anExtensionArray that:self defaultSelectBlock.
+
+]
+
+{ #category : 'as yet unclassified' }
+MPMicroPrinter >> allFilesIn: aRelativePathString ofTypes: anExtensionArray that: aBlock [
+	directory := root / aRelativePathString.
+	extensions := anExtensionArray.
 	selectBlock := aBlock.
 	^self mondrianView 
 ]
@@ -152,7 +166,7 @@ MPMicroPrinter >> mondrianView [
 	view nodes
 		shape: [:aFile | GtMondrianUMLClassElement withDefaultContainer
 		label: (aFile basename)];
-	with: (selectBlock value: ((directory ) allFiles select: [:each | each extension = extension])) ;
+	with: (selectBlock value: ((directory ) allFiles select: [:each | extensions includes: each extension])) ;
 	forEach: [:file |
 		view nodes
 			shape: [:fi | |enc|
